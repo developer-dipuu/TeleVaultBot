@@ -9,7 +9,8 @@ PRIVATE_CHANNEL_ID2 =  -1003972430511
 
 BOTUSER = "TeleVaultSvsBot"
 # Welcome text with HTML formatting
-WELCOME_TEXT = ("❌ 𝖸𝗈𝗎 𝗆𝗎𝗌𝗍 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 𝗍𝗈 𝗍𝗁𝖾 𝗈𝖿𝖿𝗂𝖼𝗂𝖺𝗅 𝖻𝗈𝗍 𝖼𝗁𝖺𝗇𝗇𝖾𝗅 𝗍𝗈 𝗎𝗌𝖾 𝗍𝗁𝖾 𝖻𝗈𝗍...\n\n<blockquote>- <b>𝖢𝗁𝖺𝗇𝗇𝖾𝗅</b> - @vthnet</blockquote>\n\n<b>• Press Verify Button below to check</b>")
+WELCOME_TEXT = ("<b>Access Restricted</b>\n\n<b><u>You must join our channel to use this bot.
+</u></b>\n\n 1.<u><i>Tap Join Channel</i></u>\n2.<u></i>Tap I've Joined to verify</i></u>")
 
 
 
