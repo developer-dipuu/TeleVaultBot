@@ -513,7 +513,7 @@ async def cmd_start(m: Message):
             InlineKeyboardButton(text="Deposit", callback_data="deposit")
         ],
         [
-            InlineKeyboardButton(text="Store", callback_data="store"),
+            InlineKeyboardButton(text="Store", callback_data="buy"),
             InlineKeyboardButton(text="Profile", callback_data="stats")
         ],
         [
@@ -590,7 +590,7 @@ async def back_main(cq: CallbackQuery):
             InlineKeyboardButton(text="Deposit", callback_data="deposit")
         ],
         [
-            InlineKeyboardButton(text="Store", callback_data="store"),
+            InlineKeyboardButton(text="Store", callback_data="buy"),
             InlineKeyboardButton(text="Profile", callback_data="stats")
         ],
         [
