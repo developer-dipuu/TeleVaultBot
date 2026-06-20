@@ -641,9 +641,9 @@ async def callback_buy(cq: CallbackQuery):
         InlineKeyboardButton(text="Server — 1", callback_data="buy_server1")
     )
     kb.row(
-        InlineKeyboardButton(text="◍ Server — 2", callback_data="buy_server2")
+        InlineKeyboardButton(text="Server — 2", callback_data="buy_server2")
     )
-    kb.row(InlineKeyboardButton(text="▪️ Previous", callback_data="back_main"))
+    kb.row(InlineKeyboardButton(text="« Back", callback_data="back_main"))
 
     await cq.message.edit_text(text, parse_mode="HTML", reply_markup=kb.as_markup())
 
