@@ -573,28 +573,34 @@ async def back_main(cq: CallbackQuery):
     # Rebuild main menu dynamically (reuse your send_main_menu logic)
     photo_url = "https://files.catbox.moe/scgaoh.jpg"
     caption = (
-        f"<blockquote> Hey, {user_mention}!</blockquote>\n"
-        f"<b>𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 Account Robot- 𝖥𝖺𝗌𝗍𝖾𝗌𝗍 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖠𝖼𝖼𝗈𝗎𝗇𝗍 𝖲𝖾𝗅𝗅𝖾𝗋 𝖡𝗈𝗍🥂</b>\n\n"
-        f"<b>🚀 𝖤𝗇𝗃𝗈𝗒 𝖥𝖺𝗌𝗍 𝖠𝖼𝖼𝗈𝗎𝗇𝗍 𝖻𝗎𝗒𝗂𝗇𝗀 𝖤𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾 !\n------------------------------------------------\n• Support - @{SUPPORT}\n• Sales - @{LOGS}</b>"
+        f"<b>Welcome, {user_mention}.</b>\n\n"
+        f"<i>Your gateway to Telegram accounts and services.</i>\n\n"
+        f"<b>Use the menu below to get started.</b>\n\n"
     )
     kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(
                 text="🌐 Open Web App",
-                web_app=WebAppInfo(url="https://your-domain.com")
+                web_app=WebAppInfo(url="https://example.com")
             )
         ],
         [
             InlineKeyboardButton(text="Balance", callback_data="balance"),
-            InlineKeyboardButton(text="Buy Account", callback_data="buy_server1")
+            InlineKeyboardButton(text="Deposit", callback_data="deposit")
         ],
         [
-            InlineKeyboardButton(text="Sell Account", callback_data="sell")
+            InlineKeyboardButton(text="Store", callback_data="store"),
+            InlineKeyboardButton(text="Profile", callback_data="profile")
         ],
         [
-            InlineKeyboardButton(text="Add Funds", callback_data="recharge"),
-            InlineKeyboardButton(text="Account", callback_data="stats")
+            InlineKeyboardButton(text="Referral Program", callback_data="referral")
+        ],
+        [
+            InlineKeyboardButton(text="Sell Accounts", callback_data="sell")
+        ],
+        [
+            InlineKeyboardButton(text="Support", callback_data="support")
         ]
     ]
     )
