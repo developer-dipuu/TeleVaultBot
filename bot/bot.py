@@ -505,7 +505,7 @@ async def cmd_start(m: Message):
         [
             InlineKeyboardButton(
                 text="🌐 Open Web App",
-                web_app=WebAppInfo(url="example.com"
+                web_app=WebAppInfo(url="https://example.com")
             )
         ],
         [
