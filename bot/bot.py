@@ -499,32 +499,27 @@ async def cmd_start(m: Message):
         f"<b>Use the menu below to get started.</b>\n\n"
     )
 
-    kb = InlineKeyboardMarkup(inline_keyboard=[
+    kb = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(
+                text="🌐 Open Web App",
+                web_app=WebAppInfo(url="https://your-domain.com")
+            )
+        ],
         [
             InlineKeyboardButton(text="Balance", callback_data="balance"),
             InlineKeyboardButton(text="Buy Account", callback_data="buy_server1")
         ],
-        
         [
             InlineKeyboardButton(text="Sell Account", callback_data="sell")
-            
         ],
         [
             InlineKeyboardButton(text="Add Funds", callback_data="recharge"),
             InlineKeyboardButton(text="Account", callback_data="stats")
-        ],
-         [
-            InlineKeyboardButton(text="Redeem", callback_data="redeem"),
-            InlineKeyboardButton(text="History", callback_data="history")
-
-            ],
-        [
-            InlineKeyboardButton(text="More..", callback_data="more_menu"),
-            InlineKeyboardButton(text="Refer", callback_data="refer")
-    
         ]
-       
-    ])
+    ]
+    )
     await m.answer(caption, parse_mode="HTML", reply_markup=kb)
 
     
