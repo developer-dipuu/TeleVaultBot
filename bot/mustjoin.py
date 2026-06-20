@@ -49,11 +49,10 @@ async def send_join_message(message: types.Message):
 
     # First row: both channels
     kb.row(
-        types.InlineKeyboardButton(text="📢 𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url=f"https://t.me/+qBOMK-vel0thNWZl"),
-        types.InlineKeyboardButton(text="💌 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ", url=PRIVATE_CHANNEL_LINK)
+        types.InlineKeyboardButton(text="Join channel", url=f"https://t.me/+qBOMK-vel0thNWZl")
     )
     kb.row(
-         types.InlineKeyboardButton(text="Verify Join ☑️", callback_data="back_main")
+         types.InlineKeyboardButton(text="I've Joined", callback_data="back_main")
     )
         
 
