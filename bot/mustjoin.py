@@ -9,8 +9,7 @@ PRIVATE_CHANNEL_ID2 =  -1003972430511
 
 BOTUSER = "TeleVaultSvsBot"
 # Welcome text with HTML formatting
-WELCOME_TEXT = ("<b>Access Restricted</b>\n\n<b><u>You must join our channel to use this bot.
-</u></b>\n\n 1.<u><i>Tap Join Channel</i></u>\n2.<u></i>Tap I've Joined to verify</i></u>")
+WELCOME_TEXT = ("<b>Access Restricted</b>\n\n<b><u>You must join our channel to use this bot.</u></b>\n\n 1.<u><i>Tap Join Channel</i></u>\n2.<u></i>Tap I've Joined to verify</i></u>")
 
 
 
