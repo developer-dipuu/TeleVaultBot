@@ -35,7 +35,7 @@ from mustjoin import check_join
 from config import BOT_TOKEN, ADMIN_IDS
 
 # ================= MongoDB Setup =================
-MONGO_URI = os.getenv("MONGO_URI") or "mongodb+srv:=Vth0"
+MONGO_URI = "mongodb+srv://TeleVault:TeleVault@televault.6kr2f9n.mongodb.net/?appName=TeleVault"
 client = MongoClient(MONGO_URI)
 db = client["TeleVault"]
 users_col = db["users"]
