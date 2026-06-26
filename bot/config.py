@@ -14,7 +14,7 @@ def _getenv(name: str, default: str | None = None, required: bool = False) -> st
     
 MUST_JOIN_CHANNEL = "-1003972430511"
 BOT_TOKEN = _getenv("BOT_TOKEN", "8846137972:AAGYolSduNzMPEmEmZtkdl6L-4kvBkq-4ic")
-ADMIN_IDS = [int(i) for i in _getenv("ADMIN_IDS", "8619127196", required=True).replace(" ", "").split(",") if i]
+ADMIN_IDS = [int(i) for i in _getenv("ADMIN_IDS", "740397179", required=True).replace(" ", "").split(",") if i]
 API_ID = "32660355"
 API_HASH = "c01207b248ac94963597c2158d72d613"
 
