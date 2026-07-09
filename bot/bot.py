@@ -497,7 +497,7 @@ async def cmd_start(m: Message):
     caption = (
         f"<b>Welcome, {user_mention}.</b>\n\n"
         f"<i>Your gateway to Telegram accounts and services.</i>\n\n"
-        f"<b>Use the menu below to get started.!</b>\n\n"
+        f"<b>Use the menu below to get started</b>\n\n"
     )
 
     kb = InlineKeyboardMarkup(
